@@ -1,4 +1,17 @@
 .logo {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
+}
+
+.journalEntry {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    color: blueviolet;
 }

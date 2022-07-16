@@ -10,9 +10,34 @@
 <body>
     <img class="logo" src="jounalimg.png" alt="Image of a Journal">
     <header>
-        <h1>The Daily Journal</h1>
+        <h1>My Daily Journal</h1>
         <p>Mitchell Shelton</p>
     </header>
+    <article>
+        <section class="journalEntry">
+            <input type="text" placeholder="New Entry">
+            <input type="date">
+        </section>
+        <section class="pastEntries">
+            <p>I had a great day. It was fun!</p>
+            <p>Something about another day.</p>
+            <p>BEST DAY EVER</p>
+            <p>WORST DAY EVER</p>
+        </section>
+    </article>
+    <h2>Daily Journal</h2>
+    <main id="container">
+        <form class="entryForm">
+            <fieldset>
+                <label for="entryDate">Date</label>
+                <input type="date" name="entryDate" class="entryForm__date">
+            </fieldset>
+            <fieldset>
+                <label for="conceptsCovered">Concepts</label>
+                <input type="text" name="Concepts covered" class="entryForm_Concept">
+            </fieldset>
+        </form>
+    </main>
 </body>
 </html>
 
