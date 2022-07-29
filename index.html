@@ -7,25 +7,27 @@
     <title>Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+<ul class="navigation">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact Us</a></li>
+</ul>
 <body>
-    <img class="logo" src="jounalimg.png" alt="Image of a Journal">
+    <img class="logo" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/10/12/asset/buzzfeed-prod-web02/sub-buzz-20402-1473523896-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="Image of a Journal">
     <header>
         <h1>My Daily Journal</h1>
         <p>Mitchell Shelton</p>
     </header>
     <article>
-        <section class="journalEntry">
-            <input type="text" placeholder="New Entry">
-            <input type="date">
+        <section class="favoriteQuote">
+            <p>“Be yourself; everyone else is already taken.”</p>
         </section>
-        <section class="pastEntries">
-            <p>I had a great day. It was fun!</p>
-            <p>Something about another day.</p>
-            <p>BEST DAY EVER</p>
-            <p>WORST DAY EVER</p>
+        <section class="quoteAuthor">
+            <p>Albert Einstein</p>
         </section>
     </article>
-    <h2>Daily Journal</h2>
+    <h2>New Journal Entries</h2>
     <main id="container">
         <form class="entryForm">
             <fieldset>
@@ -34,9 +36,30 @@
             </fieldset>
             <fieldset>
                 <label for="conceptsCovered">Concepts</label>
-                <input type="text" name="Concepts covered" class="entryForm_Concept">
+                <input type="text" name="Concepts covered" class="entryForm_Concept" placeholder="Concepts Covered">
             </fieldset>
+            <fieldset>
+                <label for="summary">Summary</label>
+                <input type="text" name="Summary" placeholder="A Brief Summary">
+            </fieldset>
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <textarea name="Journal Entry" class="journalEntry"></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="moodForTheDay">Mood for the day</label>
+                <select name="moodForTheDay" id="Mood For The Day">
+                    <option value="" disabled selected>How do you feel?</option>
+                    <option value="Happy">Happy</option>
+                    <option value="Meh">Meh</option>
+                    <option value="Sad">Sad</option>
+                </select>
+            </fieldset>
+            <div class="button">
+                <button>Record New Entry</button>
+            </div>
         </form>
+        <article id="entries"></article>
     </main>
 </body>
 </html>
