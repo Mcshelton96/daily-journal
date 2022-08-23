@@ -7,13 +7,15 @@
     <title>Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
-<ul class="navigation">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Products</a></li>
-    <li><a href="#">Contact Us</a></li>
-</ul>
 <body>
+    <nav> 
+      <ul class="navigation">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</nav>
     <img class="logo" src="https://img.buzzfeed.com/buzzfeed-static/static/2016-09/10/12/asset/buzzfeed-prod-web02/sub-buzz-20402-1473523896-1.jpg?downsize=700%3A%2A&output-quality=auto&output-format=auto" alt="Image of a Journal">
     <header>
         <h1>My Daily Journal</h1>
@@ -59,8 +61,11 @@
                 <button>Record New Entry</button>
             </div>
         </form>
+        <br>
+        <h3>Previous Entries</h3>
         <article id="entries"></article>
     </main>
+    <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
 

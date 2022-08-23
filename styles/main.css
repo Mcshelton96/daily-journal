@@ -41,16 +41,39 @@ header {
     color: black;
 }
 
-.entryForm {
-    display: flex;
-    flex-direction: column;
-}
+/* .entryForm {
+    text-align: center;
+    margin: auto;
+} */
 
 fieldset {
     display: flex;
     flex-direction: column;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 10px;
+    width: 800px;
+    align-content: center;
 }
 
 button {
     margin-top: 15px;
 }
+
+.allentries {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.entry {
+    border: 2px black solid;  
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 10px; 
+    width: 500px;
+}
+
