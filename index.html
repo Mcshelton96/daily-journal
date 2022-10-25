@@ -31,26 +31,26 @@
     </article>
     <h2>New Journal Entries</h2>
     <main id="container">
-        <form class="entryForm">
+        <div class="entryForm">
             <fieldset>
                 <label for="entryDate">Date</label>
-                <input type="date" name="entryDate" class="entryForm__date">
+                <input id="date" name="entryDate" class="entryForm__date">
             </fieldset>
             <fieldset>
                 <label for="conceptsCovered">Concepts</label>
-                <input type="text" name="Concepts covered" class="entryForm_Concept" placeholder="Concepts Covered">
+                <input id="conceptsCovered" name="conceptsCovered" class="entryForm_Concept" placeholder="Concepts Covered">
             </fieldset>
             <fieldset>
                 <label for="summary">Summary</label>
-                <input type="text" name="Summary" placeholder="A Brief Summary">
+                <input id="summary" name="Summary" placeholder="A Brief Summary">
             </fieldset>
             <fieldset>
                 <label for="journalEntry">Journal Entry</label>
-                <textarea name="Journal Entry" class="journalEntry"></textarea>
+                <textarea id="journalEntry" class="journalEntry"></textarea>
             </fieldset>
             <fieldset>
                 <label for="moodForTheDay">Mood for the day</label>
-                <select name="moodForTheDay" id="Mood For The Day">
+                <select name="Mood for the Day" id="moodForTheDay">
                     <option value="" disabled selected>How do you feel?</option>
                     <option value="Happy">Happy</option>
                     <option value="Meh">Meh</option>
@@ -58,15 +58,14 @@
                 </select>
             </fieldset>
             <div class="button">
-                <button>Record New Entry</button>
+                <button id="recordNewEntry">Record New Entry</button>
             </div>
-        </form>
+        </div>
         <br>
         <h3>Previous Entries</h3>
         <article id="entries"></article>
     </main>
     <script type="module" src="./scripts/main.js"></script>
 </body>
-</html>
 
-                
+</html>
